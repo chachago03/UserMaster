@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../../core/constants/app_colors.dart';
 
 class PrimaryButton extends StatelessWidget {
@@ -19,7 +20,7 @@ class PrimaryButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: double.infinity,
-      height: 52,
+      height: 54,
 
       child: ElevatedButton(
         onPressed: isLoading ? null : onPressed,
@@ -29,7 +30,7 @@ class PrimaryButton extends StatelessWidget {
           foregroundColor: Colors.white,
 
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
+            borderRadius: BorderRadius.circular(16),
           ),
         ),
 

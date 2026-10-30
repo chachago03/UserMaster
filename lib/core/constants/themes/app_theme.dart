@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../app_colors.dart';
 
 class AppTheme {
@@ -14,32 +15,30 @@ class AppTheme {
       ),
 
       appBarTheme: const AppBarTheme(
-        backgroundColor: AppColors.primary,
-        foregroundColor: AppColors.white,
-        centerTitle: true,
+        backgroundColor: AppColors.background,
+        foregroundColor: AppColors.black,
+        centerTitle: false,
+        elevation: 0,
+        scrolledUnderElevation: 0,
       ),
 
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
-        fillColor: AppColors.white,
+        fillColor: AppColors.background,
 
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
+          borderRadius: BorderRadius.circular(14),
+          borderSide: BorderSide.none,
         ),
 
         enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide(
-            color: Colors.grey.shade300,
-          ),
+          borderRadius: BorderRadius.circular(14),
+          borderSide: BorderSide(color: AppColors.grey.withValues(alpha: 0.2)),
         ),
 
         focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
-          borderSide: const BorderSide(
-            color: AppColors.primary,
-            width: 2,
-          ),
+          borderRadius: BorderRadius.circular(14),
+          borderSide: const BorderSide(color: AppColors.primary, width: 2),
         ),
       ),
     );
