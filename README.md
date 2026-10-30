@@ -1,17 +1,67 @@
-# usermaster
+# UserMaster
 
-A new Flutter project.
+Aplicación Flutter desarrollada para el Taller 2.
 
-## Getting Started
+## Descripción
 
-This project is a starting point for a Flutter application.
+UserMaster es una aplicación de gestión de usuarios
+que implementa pantallas de autenticación y navegación
+siguiendo principios básicos de Clean Architecture.
 
-A few resources to get you started if this is your first Flutter project:
+## Tecnologías
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- Flutter
+- Dart
+- Material Design 3
+- Git
+- GitHub
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Funcionalidades
+
+- Splash Screen.
+- Inicio de sesión.
+- Registro de usuarios.
+- Recuperación de contraseña.
+- Dashboard.
+- Perfil de usuario.
+- Cierre de sesión.
+- Navegación mediante rutas centralizadas.
+
+## Arquitectura
+
+El proyecto está organizado en:
+
+- Core: configuraciones y componentes generales.
+- Domain: entidades principales.
+- Presentation: pantallas, rutas y widgets.
+
+## Ejecución
+
+Instalar dependencias:
+
+    flutter pub get
+
+Ejecutar aplicación:
+
+    flutter run
+
+Ejecutar en Chrome:
+
+    flutter run -d chrome
+
+Analizar código:
+
+    flutter analyze
+
+Ejecutar pruebas:
+
+    flutter test
+
+## Consideraciones
+
+Esta versión no utiliza backend ni base de datos.
+
+El inicio de sesión, registro y recuperación
+de contraseña son simulaciones locales.
+
+No se guardan usuarios ni se envían correos reales.

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'core/themes/app_theme.dart';
+import 'core/constants/themes/app_theme.dart';
 import 'presentation/routes/app_routes.dart';
 
 class UserMasterApp extends StatelessWidget {
